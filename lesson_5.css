@@ -1,0 +1,41 @@
+.desk {
+  display: flex;
+  flex-wrap: wrap;
+  height: 420px;
+  width: 420px;
+  text-align: center;
+}
+
+.rowNumerator, .colNumerator {
+  text-align: center;
+}
+
+.rowNumerator {
+  height: 50px;
+  width: 20px;
+}
+
+.colNumerator {
+  height: 20px;
+  width: 50px;
+}
+
+.emptyCell {
+  height: 20px;
+  width: 20px;
+}
+
+.whiteCell, .blackCell {
+  height: 50px;
+  width: 50px;
+}
+
+.blackCell {
+  background-color: #000;
+}
+
+.whiteCell {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=lesson_5.css.map */
