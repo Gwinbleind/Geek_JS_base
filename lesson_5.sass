@@ -1,0 +1,34 @@
+$calibrA: 50px
+$calibrB: 20px
+
+.desk
+   display: flex
+   flex-wrap: wrap
+   height: $calibrA*8+$calibrB
+   width: $calibrA*8+$calibrB
+   text-align: center
+
+.rowNumerator, .colNumerator
+   text-align: center
+
+.rowNumerator
+   height: $calibrA
+   width: $calibrB
+
+.colNumerator
+   height: $calibrB
+   width: $calibrA
+
+.emptyCell
+   height: $calibrB
+   width: $calibrB
+
+.whiteCell, .blackCell
+   height: $calibrA
+   width: $calibrA
+
+.blackCell
+   background-color: #000
+
+.whiteCell
+   background-color: #fff
