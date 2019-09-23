@@ -1,9 +1,25 @@
 cartBoxTag = document.querySelector('.drop__cart');
-
+const sampleProduct = {
+    id_product: 456,
+    product_name: "Мышка",
+    price: 1000,
+    quantity: 1,
+    img_small: '',
+    img_medium: 'img/Product_1.png',
+    img_large: ''
+};
 const cart = {
     amount: 0,
     countGoods: 0,
     content: [],
+    settings: {
+        previewSelector: '',
+        openedWrapperImageClass: '',
+        openedImageClass: '',
+        openedImageScreenClass: '',
+        openedImageCloseButtonClass: '',
+        openedImageCloseButtonSource: '',
+    },
     emptyCart() {
         this.amount = 0;
         this.countGoods = 0;
@@ -33,7 +49,21 @@ const cart = {
             this.countGoods += element.quantity;
         })
     },
-    renderDropCart () {
-
+    renderDropCart() {
+        let dropCartTag = document.querySelector('.drop .drop__cart');
+        dropCartTag.innerHTML = '';
     },
+    init() {
+        document.querySelector('.products__box').addEventListener('click', event => this.productsBoxClickHandler(event));
+    },
+    productsBoxClickHandler(event) {
+        if (event.target !== 'IMG') return;
+        this.openImage(event.target.dataset.full_img_url);
+    },
+    openImage(src) {
+      this.getScreenContainer().querySelector(`.${this.settings.openedImageClass}`).src = src;
+    },
+    getScreenContainer() {
+        
+    }
 };

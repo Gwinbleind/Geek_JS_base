@@ -299,6 +299,10 @@ body {
   font-weight: 300;
 }
 
+.product__id {
+  display: none;
+}
+
 .products {
   flex-direction: column;
   margin-top: 100px;
