@@ -63,7 +63,7 @@
                <a href="#">
                   <img src="img\Cart.svg" alt="cart" class="cart__img">
                </a>
-               <div class="drop drop__cart">
+               <div class="drop drop__cart" id="dropCart">
                   <div class="cart__product">
                      <img src="img/Cart_img_1.jpg" alt="" class="cart__prod_img">
                      <div class="cart__prod_title">Rebox Zane</div>
@@ -93,10 +93,10 @@
    <nav>
       <!-- Список меню -->
       <ul class="menu">
-         <li class="menu__list"><a href="" class="menu__link">Home</a></li>
-         <li class="menu__list"><a href="" class="menu__link">Man</a></li>
+         <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+         <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
          <li class="menu__list">
-            <a href="" class="menu__link">Women</a>
+            <a href="#" class="menu__link">Women</a>
             <!-- Выпадающее меню, завязанное на "Women" menu link -->
             <div class="drop menu__drop">
                <div class="dropflex">
@@ -143,11 +143,11 @@
                <span class="drop__img_text">Super<br>sale!</span>
             </div>
          </li>
-         <li class="menu__list"><a href="" class="menu__link">Kids</a></li>
-         <li class="menu__list"><a href="" class="menu__link">Accoseriese</a></li>
-         <li class="menu__list"><a href="" class="menu__link">Featured</a></li>
+         <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+         <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+         <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
          <li class="menu__list">
-            <a href="" class="menu__link">Hot Deals</a>
+            <a href="#" class="menu__link">Hot Deals</a>
             <div class="drop menu__drop menu__drop_last">
                <div class="dropflex">
                   <div class="drop__h3">Women</div>
@@ -204,94 +204,85 @@
       <div class="topFilter"></div>
       <div class="products__box products__box_x3 div_flex">
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img class="product__img" src="img/Product_14.jpg" data-full_img_url="img/Product_14.jpg" alt="">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="14">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">14</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_16.jpg" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="16">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">16</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_3.png" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id=3>Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">3</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_12.jpg" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id=12>Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">12</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img class="product__img" src="img/Product_8.png" alt="">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="8">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">8</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_17.jpg" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="17">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">17</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_6.png" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="6">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">6</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_13.jpg" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="13">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">13</div>
          </div>
          <div class="product__element">
-            <a href="" class="product__content">
+            <a href="#" class="product__content">
                <img src="img/Product_15.jpg" alt="" class="product__img">
                <div class="product__name">Mango People T-shirt</div>
                <div class="product__price">$52.00</div>
             </a>
-            <a href="#" class="product__add">Add to Cart</a>
+            <a href="#" class="product__add" data-product__id="15">Add to Cart</a>
             <img src="img/stars5.jpg" alt="stars" class="product__stars">
-            <div class="product__id">15</div>
          </div>
       </div>
       <div class="pagination"></div>
